@@ -16,7 +16,7 @@ PyTorch Behavior Cloning Study를 진행하며 등장한 필수 개념들과 개
 | [imitation_learning.md](./imitation_learning.md) | Behavior Cloning, IRL 등 모방 학습 개요 | 03, 04 |
 | [numpy_vs_pytorch.md](./numpy_vs_pytorch.md) | NumPy와 PyTorch의 차이 및 함께 쓰는 이유 | 03, 04 |
 | [batch.md](./batch.md) | 배치 개념, epoch, iteration 차이 | 02, 03, 04 |
-
+| [activation_functions.md](./activation_functions.md) | ReLU, Sigmoid, Tanh 등 활성화 함수 종류와 역할 | 02, 04 |
 ---
 
 ## 추가 예정
