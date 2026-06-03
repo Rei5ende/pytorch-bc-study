@@ -15,6 +15,7 @@ PyTorch Behavior Cloning Study를 진행하며 등장한 필수 개념들과 개
 | [dropout.md](./dropout.md) | 과적합 방지 기법 Dropout | 02 |
 | [imitation_learning.md](./imitation_learning.md) | Behavior Cloning, IRL 등 모방 학습 개요 | 03, 04 |
 | [numpy_vs_pytorch.md](./numpy_vs_pytorch.md) | NumPy와 PyTorch의 차이 및 함께 쓰는 이유 | 03, 04 |
+| [batch.md](./batch.md) | 배치 개념, epoch, iteration 차이 | 02, 03, 04 |
 
 ---
 
