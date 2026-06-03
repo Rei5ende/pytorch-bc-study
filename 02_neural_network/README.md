@@ -1,5 +1,46 @@
 # 02. 신경망 구현 (MNIST 분류기)
 
+## MNIST란?
+
+**Modified National Institute of Standards and Technology**의 약자.  
+미국 국립표준기술연구소(NIST)가 수집한 손글씨 숫자 데이터셋을 수정(Modified)한 것.
+
+- 학습 데이터: 60,000개
+- 테스트 데이터: 10,000개
+- 이미지 크기: 28×28 픽셀 (흑백)
+- 클래스: 0~9 숫자 10가지
+
+---
+
+## 전체 기술 흐름
+
+```
+원본 이미지 (28×28 픽셀)
+        ↓
+전처리 (ToTensor + Normalize)
+  픽셀값 0~255 → -1.0~1.0
+        ↓
+DataLoader
+  60,000개를 64개씩 배치로 분할
+        ↓
+모델 (순전파)
+  Flatten → Linear → ReLU → Linear → ReLU → Linear
+  784     →   128  →       →   64   →       →  10
+        ↓
+CrossEntropyLoss
+  예측값과 정답의 차이 계산
+        ↓
+역전파 (loss.backward())
+  각 weight의 기울기 계산
+        ↓
+Adam 옵티마이저 (optimizer.step())
+  기울기로 weight 업데이트
+        ↓
+반복 (5 epochs × 937 배치)
+        ↓
+테스트 정확도: 95.82%
+```
+
 ---
 
 ## 배운 내용
